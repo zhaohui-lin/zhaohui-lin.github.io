@@ -1,1 +1,2244 @@
-# zhaohui-lin.github.io
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- head -->
+<head>
+  <script>
+    (function () {
+        var a_idx = 0;
+        window.onclick = function (event) {
+            var a = new Array("✨", "🤖", "🥳", "👋", "🦾", "🐽");
+
+            var heart = document.createElement("b");
+            heart.onselectstart = new Function('event.returnValue=false');
+
+            document.body.appendChild(heart).innerHTML = a[a_idx];
+            a_idx = (a_idx + 1) % a.length;
+            heart.style.cssText = "position: fixed;left:-100%;";
+
+            var f = 16, 
+                x = event.clientX - f / 2, 
+                y = event.clientY - f,
+                c = randomColor(), 
+                a = 1,
+                s = 1.2; 
+
+            var timer = setInterval(function () { 
+                if (a <= 0) {
+                    document.body.removeChild(heart);
+                    clearInterval(timer);
+                } else {
+                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                        c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                        s + ");";
+
+                    y--;
+                    a -= 0.016;
+                    s += 0.002;
+                }
+            }, 15)
+
+        }
+        function randomColor() {
+
+            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+            .random() * 255)) + ")";
+
+        }
+    }());
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-66DNLPJ6PY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-66DNLPJ6PY');
+  </script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Zhaohui Lin   |  林昭辉</title>
+  
+  <meta name="author" content="Haoran Geng">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/png" href="images/icon.png">
+  <style>
+    .nav-link:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+
+<!-- bib hide -->
+<script type="text/javascript">
+  function hideshow(which){
+  if (!document.getElementById)
+  return
+  if (which.style.display=="block")
+  which.style.display="none"
+  else
+  which.style.display="block"
+  }
+</script>
+
+<!-- body -->
+<body>
+  <!-- Navigation Bar -->
+  <div style="position: fixed; top: 0; left: 0; width: 100%; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; padding: 10px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+      <a href="#news" class="nav-link" style="margin: 0 15px; text-decoration: none; color: #333; font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: background-color 0.3s;">News</a>
+      <a href="#research" class="nav-link" style="margin: 0 15px; text-decoration: none; color: #333; font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: background-color 0.3s;">Research</a>
+      <a href="#before2022" class="nav-link" style="margin: 0 15px; text-decoration: none; color: #333; font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: background-color 0.3s;">Before 2022</a>
+      <a href="#services" class="nav-link" style="margin: 0 15px; text-decoration: none; color: #333; font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: background-color 0.3s;">Services</a>
+      <a href="#experience" class="nav-link" style="margin: 0 15px; text-decoration: none; color: #333; font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: background-color 0.3s;">Experience</a>
+      <a href="#awards" class="nav-link" style="margin: 0 15px; text-decoration: none; color: #333; font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: background-color 0.3s;">Awards</a>
+    </div>
+  </div>
+  
+  <!-- Add top padding to account for fixed navigation -->
+  <div style="height: 60px;"></div>
+
+  <!-- CSS for navigation hover effects -->
+  <style>
+    .nav-link:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+
+  <!-- self-intro -->
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2%;width:55%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Zhaohui Lin | 林昭辉</name>
+              </p>
+              <p style="text-align: justify">
+              <intro>
+                I am a Ph.D. student at <a href="https://www.zju.edu.cn/" target="_blank">Zhejiang University</a>, 
+                advised by 
+                Dr. <a href="https://grasplab2022.github.io/" target="_blank">Huixu Dong</a>.
+                 <!-- <a href="https://www.berkeley.edu/" target="_blank"><d>UC Berkeley</d></a>.  -->
+                 I also work closely with 
+                 Prof. <a href="https://people.eecs.berkeley.edu/~efros/" target="_blank">Alexei (Alyosha) Efros</a>, 
+                 Prof. <a href="https://geometry.stanford.edu/?member=guibas" target="_blank">Leonidas J. Guibas</a>
+                 and Prof. <a href="https://yuewang.xyz/" target="_blank">Yue Wang</a>.
+                 
+                 Previously, I was a visiting scholar at 
+                  <a href="https://www.stanford.edu/" target="_blank">Stanford University</a> through
+                  <a href="https://engineering.stanford.edu/students-academics/programs/global-engineering-programs/chinese-ugvr/" target="_blank">UGVR</a> 
+                  program.
+                I received my Bachelor's degree with honors from 
+                 <a href="https://cfcs.pku.edu.cn/english/research/turing_program/introduction1/index.htm" target="_blank">
+                  Turing Class</a>,
+                <!-- at the <a href="https://eecs.pku.edu.cn/" target="_blank"> -->
+                  <!-- <d>School of Electronic Engineering and Computer Science(EECS)</d></a>, -->
+                   <a href="https://english.pku.edu.cn/" target="_blank">Peking University</a>. 
+                   <!-- I'm also a research visitor at <a href="https://www.stanford.edu/" target="_blank"><d>Stanford University</d></a> -->
+                <!-- and a research intern at <a href="https://bigai.ai/" target="_blank"><d>Beijing Institute for General Artificial Intelligence (BIGAI)</d></a>.  -->
+                During my undergraduate years, I was honored to be advised by Prof. <a href="https://geometry.stanford.edu/?member=guibas" target="_blank">Leonidas J. Guibas</a>, 
+                Prof. <a href="https://hughw19.github.io/" target="_blank">He Wang</a>,   and Dr. <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a>. 
+                <!-- In addition, I am privileged to work closely with 
+                Prof. <a href="https://yuewang.xyz/" target="_blank"><d>Yue Wang</d></a>,
+                Prof. <a href="https://ericyi.github.io/" target="_blank"><d>Li Yi</d></a>,
+                Prof. <a href="https://zsdonghao.github.io/" target="_blank"><d>Hao Dong</d></a>
+                and  
+                Prof. <a href="https://www.yangyaodong.com/" target="_blank"><d>Yaodong Yang</d></a>. -->
+                  I am also grateful to have grown up and studied with my twin brother <a href="https://gengyiran.github.io/" target="_blank">Yiran Geng</a>, which has been a truly unique and special experience for me.
+                
+                </intro>
+              <p style="text-align:center">
+                <a href="mailto:ghr@berkeley.edu" target="_blank">Email</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=Inr-6rEAAAAJ" target="_blank">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/geng-haoran/" target="_blank">Github</a>&nbsp/&nbsp
+                <a href="https://twitter.com/HaoranGeng2/" target="_blank">Twitter</a>&nbsp/&nbsp
+                <a href="images/WeChat.jpg" target="_blank">WeChat</a>
+              </p>
+            </td>
+            <td style="padding:0%; width:26%; max-width:26%;"> <!-- move the photo a bit left -->
+              <br>
+              <!-- <br> -->
+              <img style="padding:1%; width:100%; max-width:80%;  display: block; margin-left: auto; margin-right: auto; " 
+              alt="profile photo" src="images/personal_img.jpg" class="hoverZoomLink">
+              <!-- <a href="https://hits.seeyoufarm.com" target="_blank">
+                <img 
+                  src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgeng-haoran.github.io&count_bg=%23FF8400&title_bg=%23545353&icon=tableau.svg&icon_color=%23F3F209&title=hits&edge_flat=false" 
+                  style="display: block; margin-left: auto; margin-right: auto; width: 55%;"/>
+              </a> -->
+            </td>
+            <!-- <td style="padding:5%;width:37%;max-width:37%"> 
+              <img style="width:100%;max-width:100%" alt="profile photo" src="images/face3.jpg" class="hoverZoomLink">
+              <a href="https://hits.seeyoufarm.com" target="_blank"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgeng-haoran.github.io&count_bg=%23FF8400&title_bg=%23545353&icon=tableau.svg&icon_color=%23F3F209&title=hits&edge_flat=false"/></a>
+            </td> -->
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    </tr>
+  </tbody></table>
+
+  <!-- News -->
+  <table id="news" style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top: 100px;"><tbody>
+          
+    <!-- <br> -->
+    <heading>News</heading>
+    <br>
+    <td style="padding:0px;width:100%;vertical-align:middle">
+    <p>
+      <li>[2025/05] 🎉 I am honored to receive 
+        <b><font color='red'>Qualcomm Innovation Fellowship</font></b> together with my amazing teammate <a href="https://www.junyi42.com/" target="_blank">Junyi Zhang</a>!</li>
+      <li>[2025/04] 🎉 RoboVerse gets accepted by RSS 2025!</li>
+      <li>[2025/04] 🎉 RoboVerse is released!</li>
+      <li>[2024/09] 🎉 Three papers get accepted by CoRL 2024, of which RAM is selected as <b><font color='red'>Oral Presentation</font></b> .</li>
+      <li>[2024/07] SAGE🌿 won the <b><font color='red'>Best Paper Award</font></b> at RSS 2024 SemRob Workshop</li>
+      <li>[2024/06] I won the <b><font color='red'>Yunfan Award</font></b> and was named as Rising Star at the <a href="https://www.worldaic.com.cn/" target="_blank">World Artificial Intelligence Conference</a> (top 15 early career Chinese AI researchers)! I am the only undergraduate student to win this award so far. </li>
+      <li>[2024/05] 🎉 SAGE gets accepted to RSS 2024.</li>
+      <li>[2024/03] I am honored to receive the <b><font color='red'>Berkeley Fellowship Award</font></b> and <b><font color='red'>Stanford Graduate Fellowship Award</font></b>.</li>
+      <li>[2023/12] Excited to announce <a href="https://simulately.wiki/" target="_blank">Simulately</a>🤖, a go-to toolkit for robotics researchers navigating diverse simulators!</li>
+      <li>[2023/12] I'm honored to be selected as one of the <b><font color='red'>Person of the Year of Peking University</font></b>.</li>
+      <li>[2023/10] I gave an Oral Presentation on UniDexGrasp++ at ICCV 2023.</li>
+      <li>[2023/10] 🎉 UniDexGrasp++ is selected as <b><font color='red'>Best Paper Finalist</font></b> at ICCV 2023.</li>
+      <li>[2023/07] 🎉 Two papers get accepted to ICCV 2023 with UniDexGrasp++ receiving final reviews of <b><font color='red'>all strong accepts (the highest ratings)</font></b>.</li>
+      <li>[2023/07] 🎉 One paper gets accepted to Machine Learning Journal.</li>
+      <li>[2023/03] 🎉 GAPartNet is selected as a <b><font color='red'>Highlight</font></b> at CVPR 2023 (Top 10% of accepted papers, top 2.5% of submissions).</li>
+      <li>[2023/02] 🎉 Three papers get accepted to CVPR 2023 with GAPartNet receiving final reviews of <b><font color='red'>all accepts (the highest ratings)</font></b>.</li>
+      <li>[2023/01] 🎉 One paper gets accepted to ICRA 2023.</li>
+    </p> 
+  </td>
+  </tr>
+  </tbody></table>
+
+  <!-- Research -->
+  <table id="research" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top: 170px;"><tbody>
+    <br>
+    <heading>Research</heading>
+    <br>
+    <p>
+      My research interest is broadly in <strong>Robotics</strong> and <strong>3D Computer Vision</strong>, with particular
+    interests in generalizable object perception, understanding and manipulation currently. My research objective
+    is to build an intelligent agent with the robust and generalizable ability to perceive and interact
+    with a complex real-world environment.
+
+    Representative works are <span class="highlight">highlighted</span>.
+    </p>
+
+    <!-- RodriNet -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:40px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/rodri_net.png' width="180"></div>
+          <!-- <br> -->
+          <img src='images/rodri_net.png' width="180">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://arxiv.org/pdf/2506.02618" target="_blank">
+          <papertitle>Rodrigues Network for Learning Robot Actions
+          </papertitle>
+        </a>
+        <br>
+        <a class="a2" href="https://mzhmxzh.github.io/" target="_blank">Jialiang Zhang*</a>,
+        <a:focus><strong>Haoran Geng*</strong></a:focus>,
+        <a class="a2" href="https://qq456cvb.github.io/" target="_blank">Yang You*</a>,
+        <a class="a2" href="https://cs.stanford.edu/~congyue/" target="_blank">Congyue Deng</a>,
+        <a class="a2" href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>,
+        <a class="a2" href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a>,
+        <a class="a2" href="https://geometry.stanford.edu/?member=guibas" target="_blank">Leonidas Guibas</a>
+        <br>
+        (*equal contribution)
+        <br>
+        <a href="https://arxiv.org/pdf/2506.02618">Paper</a> /
+        <a href="https://arxiv.org/pdf/2506.02618">Project</a> / 
+        <a href="javascript:hideshow(document.getElementById('rodrigenet'))">Bibtex</a>
+        <p id="rodrigenet" style="font:1px; display: none">
+          @misc{zhang2025rodriguesnetworklearningrobot,
+            <br>
+            title={Rodrigues Network for Learning Robot Actions}, 
+            <br>
+            author={Jialiang Zhang and Haoran Geng and Yang You and Congyue Deng and Pieter Abbeel and Jitendra Malik and Leonidas Guibas},
+            <br>
+            year={2025},
+            <br>
+            eprint={2506.02618},
+            <br>
+            archivePrefix={arXiv},
+            <br>
+            primaryClass={cs.RO},
+            <br>
+            url={https://arxiv.org/abs/2506.02618}, 
+      }
+        </p>
+        <br>
+        <em><strong>ArXiv preprint</strong></em>
+        <p></p>
+        <p> We design the Rodrigues Network (RodriNet), a novel neural architecture specialized for
+          processing actions. </p>
+      </td>
+    </tr>
+
+
+    <!-- ViTacFormer -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:40px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/vitacformer.png' width="180"></div>
+          <!-- <br> -->
+          <img src='images/vitacformer.png' width="180">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2506.15953" target="_blank">
+          <papertitle>ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation
+          </papertitle>
+        </a>
+        <br>
+        <a class="a2" href="https://liangheng121.github.io/" target="_blank">Liang Heng*</a>,
+        <a:focus><strong>Haoran Geng*†</strong></a:focus>,
+        <a class="a2" href="https://openreview.net/profile?id=~Kaifeng_Zhang1" target="_blank">Kaifeng Zhang</a>,
+        <a class="a2" href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>,
+        <a class="a2" href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a>
+        <br>
+        (* equal contribution, † project lead)
+        <br>
+        <a href="https://arxiv.org/abs/2506.15953">Paper</a> /
+        <a href="https://arxiv.org/abs/2506.15953">Project</a> / 
+        <a href="javascript:hideshow(document.getElementById('vitacformer'))">Bibtex</a>
+        <p id="vitacformer" style="font:1px; display: none">
+          @misc{heng2025vitacformerlearningcrossmodalrepresentation,
+            <br>
+            title={ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation}, 
+            <br>
+            author={Liang Heng and Haoran Geng and Kaifeng Zhang and Pieter Abbeel and Jitendra Malik},
+            <br>
+            year={2025},
+            <br>
+            eprint={2506.15953},
+            <br>
+            archivePrefix={arXiv},
+            <br>
+            primaryClass={cs.RO},
+            <br>
+            url={https://arxiv.org/abs/2506.15953}, 
+            <br>
+      }
+        </p>
+        <br>
+        <em><strong>ArXiv preprint</strong></em>
+        <p></p>
+        <p> We present ViTacFormer, a representation-learning approach that couples a cross-attention encoder to fuse high-resolution vision and touch with an autoregressive tactile prediction head that anticipates future contact signals. </p>
+      </td>
+    </tr>
+
+    <!-- SkillBlender -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:40px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/skillblender.jpg' width="180"></div>
+          <!-- <br> -->
+          <img src='images/skillblender.jpg' width="180">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://usc-gvl.github.io/SkillBlender-web/" target="_blank">
+          <papertitle>SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation via Skill Blending
+          </papertitle>
+        </a>
+        <br>
+        <a class="a2" href="https://yuxuank.com/" target="_blank"></a>Yuxuan Kuang*</a>,
+        <a:focus><strong>Haoran Geng*</strong></a:focus>,
+        <a class="a2" href="https://stanfordasl.github.io/people/amine-elhafsi/" target="_blank">Amine Elhafsi</a>,
+        <a class="a2" href="https://dotandung.github.io/" target="_blank">Tan-Dzung Do</a>,
+        <a class="a2" href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>,
+        <a class="a2" href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a>,
+        <a class="a2" href="https://web.stanford.edu/people/pavone" target="_blank">Marco Pavone</a>,
+        <a class="a2" href="https://yuewang.xyz/" target="_blank">Yue Wang</a>
+        <br>
+        (*equal contribution)
+        <br>
+        <a href="https://arxiv.org/pdf/2506.09366">Paper</a> /
+        <a href="https://usc-gvl.github.io/SkillBlender-web/">Project</a> / 
+        <a href="https://github.com/Humanoid-SkillBlender/SkillBlender">Code</a> / 
+        <a href="javascript:hideshow(document.getElementById('skillblender'))">Bibtex</a>
+        <p id="skillblender" style="font:1px; display: none">
+          @article{kuang2025skillblender,
+            <br>
+            title={SkillBlender: Towards Versatile Humanoid Whole-Body Loco-Manipulation via Skill Blending},
+            <br>
+            author={Kuang, Yuxuan and Geng, Haoran and Elhafsi, Amine and Do, Tan-Dzung and Abbeel, Pieter and Malik, Jitendra and Pavone, Marco and Wang, Yue},
+            <br>
+            journal={arXiv preprint arXiv:2506.09366},
+            <br>
+            year={2025},
+            <br>
+          }
+        </p>
+        <br>
+        <em><strong>ArXiv preprint</strong></em>
+        <p></p>
+        <p> We design the Rodrigues Network (RodriNet), a novel neural architecture specialized for
+          processing actions. </p>
+      </td>
+    </tr>
+
+    <!-- FastTD3 -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:40px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/fasttd3.png' width="200"></div>
+          <!-- <br> -->
+          <img src='images/fasttd3.png' width="200">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://younggyo.me/fast_td3/" target="_blank">
+          <papertitle>FastTD3: Simple, Fast, and Capable Reinforcement Learning for Humanoid Control
+          </papertitle>
+        </a>
+        <br>
+        <a class="a2" href="https://younggyo.me/" target="_blank">Younggyo Seo</a>,
+        <a class="a2" href="https://sferrazza.cc/" target="_blank">Carmelo Sferrazza</a>,
+        <a:focus><strong>Haoran Geng</strong></a:focus>,
+        <a class="a2" href="https://scholar.google.com/citations?user=GnEVRtQAAAAJ&hl=en" target="_blank">Michal Nauman</a>,
+        <a class="a2" href="https://zhaohengyin.github.io/" target="_blank">Zhao-Heng Yin</a>,
+        <a class="a2" href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>
+        <br>
+        <a href="https://arxiv.org/abs/2505.22642">Paper</a> /
+        <a href="https://younggyo.me/fast_td3/">Project</a> / 
+        <a href="javascript:hideshow(document.getElementById('fasttd3'))">Bibtex</a>
+        <p id="fasttd3" style="font:1px; display: none">
+          @misc{seo2025fasttd3simplefastcapable,
+            <br>
+            title={FastTD3: Simple, Fast, and Capable Reinforcement Learning for Humanoid Control}, 
+            <br>
+            author={Younggyo Seo and Carmelo Sferrazza and Haoran Geng and Michal Nauman and Zhao-Heng Yin and Pieter Abbeel},
+            <br>
+            year={2025},
+            <br>
+            eprint={2505.22642},
+            <br>
+            archivePrefix={arXiv},
+            <br>
+            primaryClass={cs.RO},
+            <br>
+            url={https://arxiv.org/abs/2505.22642}, 
+            <br>
+      }
+        </p>
+        <br>
+        <em><strong>Technical Report, 2025</strong></em>
+        <p></p>
+        <p> We introduce FastTD3, a simple, fast, and capable off-policy RL algorithm for humanoid control. </p>
+      </td>
+    </tr>
+
+    
+    <!-- RoboVerse -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/roboverse.png' width="220"></div>
+          <!-- <br> -->
+          <img src='images/roboverse.png' width="220">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://roboverseorg.github.io/" target="_blank">
+          <papertitle>RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning
+          </papertitle>
+        </a>
+       
+          <br>
+          <a:focus><strong>Haoran Geng*†</strong></a:focus>,
+          <a class="a2" href="https://fisher-wang.github.io/" target="_blank">Feishi Wang</a>*,
+          <a class="a2" href="https://songlin.github.io/" target="_blank">Songlin Wei</a>*,
+          <a class="a2" href="https://yuyangli.com/" target="_blank">Yuyang Li</a>*,
+          <a class="a2" href="https://www.bangjunwang.com/" target="_blank">Bangjun Wang</a>*,
+          <a class="a2" href="https://boshi-an.github.io/" target="_blank">Boshi An</a>*,
+          <a class="a2" href="https://charlietcheng.github.io/" target="_blank">Charlie Tianyue Cheng</a>*,
+          <a class="a2" href="https://scholar.google.com/citations?user=BIPK9KEAAAAJ" target="_blank">Haozhe Lou</a>,
+          <a class="a2" href="https://www.linkedin.com/in/peihao-li-555660225/" target="_blank">Peihao Li</a>,
+          <a class="a2" href="https://wangyenjen.github.io/" target="_blank">Yen-Jen Wang</a>,
+          <a class="a2" href="https://www.lyt0112.com/" target="_blank">Yutong Liang</a>,
+          <a class="a2" href="https://scholar.google.com/citations?user=JF9J8uUAAAAJ" target="_blank">Dylan Goetting</a>,
+          <a class="a2" href="https://co1one.github.io/" target="_blank">Chaoyi Xu</a>,
+          <a class="a2" href="https://blog.chenhaozhe.top/" target="_blank">Haozhe Chen</a>,
+          <a class="a2" href="https://scholar.google.com/citations?user=KmGNBSMAAAAJ" target="_blank">Yuxi Qian</a>,
+          <a class="a2" href="https://gengyiran.github.io/" target="_blank">Yiran Geng</a>,
+          <a class="a2" href="https://pointscoder.github.io/" target="_blank">Jiageng Mao</a>,
+          <a class="a2" href="https://wkwan7.github.io/" target="_blank">Weikang Wan</a>,
+          <a class="a2" href="https://robo-alex.github.io/" target="_blank">Mingtong Zhang</a>,
+          <a class="a2" href="https://jiangranlv.github.io/" target="_blank">Jiangran Lyu</a>,
+          <a class="a2" href="https://sihengz02.github.io/" target="_blank">Siheng Zhao</a>,
+          <a class="a2" href="https://jzhzhang.github.io/" target="_blank">Jiazhao Zhang</a>,
+          <a class="a2" href="https://mzhmxzh.github.io/" target="_blank">Jialiang Zhang</a>,
+          <a class="a2" href="https://chengyzhao.github.io/" target="_blank">Chengyang Zhao</a>,
+          <a class="a2" href="https://luhr2003.github.io/" target="_blank">Haoran Lu</a>,
+          <a class="a2" href="https://selina2023.github.io/" target="_blank">Yufei Ding</a>,
+          <a class="a2" href="https://nikepupu.github.io/" target="_blank">Ran Gong</a>,
+          <a class="a2" href="" target="_blank">Yuran Wang</a>,
+          <a class="a2" href="https://yuxuank.com/" target="_blank">Yuxuan Kuang</a>,
+          <a class="a2" href="https://warshallrho.github.io/" target="_blank">Ruihai Wu</a>,
+          <a class="a2" href="https://buzz-beater.github.io/" target="_blank">Baoxiong Jia</a>,
+          <a class="a2" href="https://sferrazza.cc/" target="_blank">Carlo Sferrazza</a>,
+          <a class="a2" href="https://zsdonghao.github.io/" target="_blank">Hao Dong</a>,
+          <a class="a2" href="https://siyuanhuang.com/" target="_blank">Siyuan Huang<span>&#8224;</span></a>,
+          <a class="a2" href="https://yuewang.xyz/" target="_blank">Yue Wang</a><span>&#8224;</span>,
+          <a class="a2" href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a><span>&#8224;</span>,
+          <a class="a2" href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a><span>&#8224;</span>
+          <br>
+        <a href="https://roboverseorg.github.io/static/pdfs/roboverse.pdf">Paper</a> /
+        <a href="https://roboverseorg.github.io/">Project</a> / 
+        <a href="https://github.com/RoboVerseOrg/RoboVerse">Code</a> /
+        <a href="javascript:hideshow(document.getElementById('roboverse'))">Bibtex</a>
+        <p id="roboverse" style="font:1px; display: none">
+          @misc{geng2025roboverseunifiedplatformdataset,
+            <br>
+            title={RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning}, 
+            <br>
+            author={Haoran Geng and Feishi Wang and Songlin Wei and Yuyang Li and Bangjun Wang and Boshi An and Charlie Tianyue Cheng and Haozhe Lou and Peihao Li and Yen-Jen Wang and Yutong Liang and Dylan Goetting and Chaoyi Xu and Haozhe Chen and Yuxi Qian and Yiran Geng and Jiageng Mao and Weikang Wan and Mingtong Zhang and Jiangran Lyu and Siheng Zhao and Jiazhao Zhang and Jialiang Zhang and Chengyang Zhao and Haoran Lu and Yufei Ding and Ran Gong and Yuran Wang and Yuxuan Kuang and Ruihai Wu and Baoxiong Jia and Carlo Sferrazza and Hao Dong and Siyuan Huang and Yue Wang and Jitendra Malik and Pieter Abbeel},
+            <br>
+            year={2025},
+            <br>
+            eprint={2504.18904},
+            <br>
+            archivePrefix={arXiv},
+            <br>
+            primaryClass={cs.RO},
+            <br>
+            url={https://arxiv.org/abs/2504.18904}, 
+            <br>
+          }
+        </p>
+        <br>
+        <em><strong>RSS 2025</strong></em>
+        <p></p>
+        <p>We propose RoboVerse, a comprehensive framework for advancing robotics through a simulation platform, synthetic dataset, and unified benchmarks.</p>
+      </td>
+    </tr>
+
+
+    <!-- PhysPart -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one" style="text-align: center; margin-left: 30px;">
+          <div class="two" id='malle_image' style="text-align: center;">
+            <!-- <br> -->
+            <img src='images/icra25_physpart.gif' width="160"></div>
+          <!-- <br> -->
+          <img src='images/icra25_physpart.gif' width="160">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://red-fairy.github.io/physpart-webpage/" target="_blank">
+          <papertitle>PhysPart: Physically Plausible Part Completion for Interactable Objects
+          </papertitle>
+        </a>
+        <br>
+        <a class="a2" href="https://red-fairy.github.io/" target="_blank">Rundong Luo</a>*,
+        <a:focus><strong>Haoran Geng*</strong></a:focus>,  
+        <a class="a2" href="https://cs.stanford.edu/~congyue/" target="_blank">Congyue Deng</a>,
+        <a class="a2" href="https://xiaoyao-li.github.io/" target="_blank">Puhao Li</a>,
+        <a class="a2" href="https://silvester.wang/" target="_blank">Zan Wang</a>,
+        <a class="a2" href="https://buzz-beater.github.io/" target="_blank">Baoxiong Jia</a>,
+        <a class="a2" href="https://geometry.stanford.edu/?member=guibas" target="_blank">Leonidas Guibas</a>,
+        <a class="a2" href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a><span>&#8224;</span>
+        <br>
+        (*equal contribution)
+        <br>
+        <a href="https://arxiv.org/abs/2408.13724">Paper</a> /
+        <a href="https://red-fairy.github.io/physpart-webpage/">Project</a> / 
+        <a href="https://github.com/yxKryptonite/RAM_code">Code</a> /
+        <a href="javascript:hideshow(document.getElementById('physpart'))">Bibtex</a>
+        <p id="physpart" style="font:1px; display: none">
+          @article{Physpart,
+            <br>
+            title = {PhysPart: Physically Plausible Part Completion for Interactable Objects},
+            <br>
+            author = {Luo*, Rundong and Geng*, Haoran and Deng, Congyue and Li, Puhao and Wang, Zan and Jia, Baoxiong and Guidbas, Leonidas and Huang, Siyuan},
+            <br>
+            journal = {International Conference on Robotics and Automation (ICRA)},
+            <br>
+            year = {2025},
+            <br>
+            url = {https://arxiv.org/abs/2408.13724},
+            <br>
+          }
+        </p>
+        <br>
+        <em><strong>ICRA 2025</strong></em>
+        <p></p>
+        <p> PhysPart proposes a diffusion-based part generation model that utilizes geometric conditioning through classifier-free guidance and formulates physical constraints as a set of stability and mobility losses to guide the sampling process.
+        </p>
+      </td>
+    </tr>
+
+    <!-- RAM -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/ram_new.jpg' width="220"></div>
+          <!-- <br> -->
+          <img src='images/ram_new.jpg' width="220">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://yxkryptonite.github.io/RAM/" target="_blank">
+          <papertitle>RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation
+          </papertitle>
+        </a>
+        <br>
+        Yuxuan Kuang*, Junjie Ye*, <strong>Haoran Geng*</strong>, Jiageng Mao, Congyue Deng, Leonidas Guibas, He Wang, Yue Wang
+        <br>
+        (*equal contribution)
+        <br>
+        <a href="https://arxiv.org/abs/2407.04689">Paper</a> /
+        <a href="https://yxkryptonite.github.io/RAM/">Project</a> / 
+        <a href="https://github.com/yxKryptonite/RAM_code">Code</a> /
+        <a href="javascript:hideshow(document.getElementById('ram'))">Bibtex</a>
+        <p id="ram" style="font:1px; display: none">
+          @misc{kuang2024ramretrievalbasedaffordancetransfer,
+            <br>
+            title={RAM: Retrieval-Based Affordance Transfer for Generalizable Zero-Shot Robotic Manipulation}, 
+            <br>
+            author={Yuxuan Kuang and Junjie Ye and Haoran Geng and Jiageng Mao and Congyue Deng and Leonidas Guibas and He Wang and Yue Wang},
+            year={2024},
+            <br>
+            eprint={2407.04689},
+            <br>
+            archivePrefix={arXiv},
+            <br>
+            primaryClass={cs.RO},
+            <br>
+            url={https://arxiv.org/abs/2407.04689}, 
+            <br>
+      }
+        </p>
+        <br>
+        <em><strong>CoRL 2024, <b><font color='red'>Oral Presentation</font></b></strong></em>
+        <p></p>
+        <p> RAM proposes a retrieve-and-transfer framework for zero-shot robotic manipulation,
+           featuring generalizability across various objects, environments, and embodiments.</p>
+      </td>
+    </tr>
+
+    <!-- D3ROMA -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/d3roma.png' width="220"></div>
+          <!-- <br> -->
+          <img src='images/d3roma.png' width="220">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://pku-epic.github.io/D3RoMa/" target="_blank">
+          <papertitle>D3RoMa: Disparity Diffusion-based Depth Sensing for Material-Agnostic Robotic Manipulation
+          </papertitle>
+        </a>
+        <br>
+        
+        <a class="a2" href="https://mzhmxzh.github.io/" target="_blank">Songlin Wei</a>,
+        <a:focus><strong>Haoran Geng</strong></a:focus>,
+        <a class="a2" href="https://jychen18.github.io/" target="_blank">Jiayi Chen</a>,
+        <a class="a2" href="https://cs.stanford.edu/~congyue/" target="_blank">Congyue Deng</a>,
+        <a class="a2" href="" target="_blank">Wenbo Cui</a>,
+        <a class="a2" href="https://chengyzhao.github.io/" target="_blank">Chengyang Zhao</a>,
+        <a class="a2" href="" target="_blank">Xiaomeng Fang</a>,
+        <a class="a2" href="https://geometry.stanford.edu/?member=guibas" target="_blank">Leonidas Guibas</a>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a>,
+
+        <br>
+        <a href="https://arxiv.org/abs/2409.14365">Paper</a> /
+        <a href="https://pku-epic.github.io/D3RoMa/">Project</a> / 
+        <a href="https://github.com/songlin/d3roma">Code</a> /
+        <a href="javascript:hideshow(document.getElementById('d3roma'))">Bibtex</a>
+        <p id="d3roma" style="font:1px; display: none">
+          @inproceedings{
+            <br>
+            wei2024droma,
+            <br>
+            title={D3RoMa: Disparity Diffusion-based Depth Sensing for Material-Agnostic Robotic Manipulation},
+            <br>
+            author={Songlin Wei and Haoran Geng and Jiayi Chen and Congyue Deng and Cui Wenbo and Chengyang Zhao and Xiaomeng Fang and Leonidas Guibas and He Wang},
+            <br>
+            booktitle={8th Annual Conference on Robot Learning},
+            <br>
+            year={2024},
+            <br>
+            url={https://openreview.net/forum?id=7E3JAys1xO}
+            <br>  
+          }
+        </p>
+        <br>
+        <em><strong>CoRL 2024</strong></em>
+        <p></p>
+        <p> In this work, we propose D3RoMa, a learning-based depth estimation framework on stereo image pairs that predicts clean and accurate depth in diverse indoor scenes, even in the most challenging scenarios with translucent or specular surfaces</p>
+      </td>
+    </tr>
+
+    <!-- DexGraspNet 2.0 -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/DexGraspNet2-0.jpg' width="220"></div>
+          <!-- <br> -->
+          <img src='images/DexGraspNet2-0.jpg' width="220">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+    </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2410.23004" target="_blank">
+          <papertitle>DexGraspNet 2.0: Learning Generative Dexterous Grasping in Large-scale Synthetic Cluttered Scenes
+          </papertitle>
+        </a>
+        <br>
+
+        <a class="a2" href="https://mzhmxzh.github.io/" target="_blank">Jialiang Zhang*</a>,
+        <a:focus>Haoran Liu*</a:focus>,
+        <a:focus>Danshi Li*</a:focus>,
+        <a:focus>Xinqiang Yu*</a:focus>,
+        <a:focus><strong>Haoran Geng</strong></a:focus>,
+        <a class="a2" href="https://selina2023.github.io" target="_blank">Yufei Ding</a>,
+        <a class="a2" href="https://jychen18.github.io/" target="_blank">Jiayi Chen</a>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a><span>&#8224;</span>
+        <br>
+        (*equal contribution)
+        <br>
+        <a href="https://arxiv.org/abs/2410.23004">Paper</a> /
+        <a href="https://arxiv.org/abs/2410.23004">Project</a> / 
+        <a href="">Code</a> /
+        <a href="javascript:hideshow(document.getElementById('DexGraspNet2'))">Bibtex</a>
+        <p id="DexGraspNet2" style="font:1px; display: none">
+          @misc{zhang2024dexgraspnet20learninggenerative,
+            <br>
+            title={DexGraspNet 2.0: Learning Generative Dexterous Grasping in Large-scale Synthetic Cluttered Scenes}, 
+            <br>
+            author={Jialiang Zhang and Haoran Liu and Danshi Li and Xinqiang Yu and Haoran Geng and Yufei Ding and Jiayi Chen and He Wang},
+            <br>
+            year={2024},
+            <br>
+            eprint={2410.23004},
+            <br>
+            archivePrefix={arXiv},
+            <br>
+            primaryClass={cs.RO},
+            <br>
+            url={https://arxiv.org/abs/2410.23004}, 
+            <br>
+        }
+
+        </p>
+        <br>
+        <em><strong>CoRL 2024</strong></em>
+        <p></p>
+        <p> We synthesized a large-scale dexterous grasping dataset in cluttered scenes and designed a generative framework to learn grasping in the real world.</p>
+      </td>
+    </tr>
+
+    <!-- Open6DOR -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/open6dor.jpg' width="200"></div>
+          <!-- <br> -->
+          <img src='images/open6dor.jpg' width="200">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://pku-epic.github.io/Open6DOR" target="_blank">
+          <papertitle><br>Open6DOR: Benchmarking Open-instruction 6-DoF Object Rearrangement and A VLM-based Approach</papertitle>
+        </a>
+      <br>
+        <a class="a2" href="https://selina2023.github.io/" target="_blank">Yufei Ding</a>*,
+        <a:focus><strong>Haoran Geng*</strong></a:focus>,  
+        <a class="a2" href="" target="_blank">Chaoyi Xu</a>,
+        <a class="a2" href="" target="_blank">Xiaomeng Fang</a>,
+        <a class="a2" href="https://jzhzhang.github.io/" target="_blank">Jiazhao Zhang</a>,
+        <a class="a2" href="http://wei.songl.in/" target="_blank">Songlin Wei</a>,
+        <a class="a2" href="https://daiqy.github.io/" target="_blank">Qiyu Dai</a>,
+        <a class="a2" href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en" target="_blank">Zhizheng Zhang</a>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a><span>&#8224;</span>
+        <br>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10802733" target="_blank">Paper</a>
+        /
+        <a href="https://pku-epic.github.io/Open6DOR" target="_blank">Project Page</a>
+        /
+        <a href="https://github.com/Selina2023/Open6DOR">Code</a>
+        /
+        <a href="https://www.youtube.com/watch?v=ekeKHs2eqsE">Video</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('o6d'))">Bibtex</a>
+        <p id="o6d" style="font:1px; display: none">
+          @INPROCEEDINGS{10802733,
+            <br>
+            author={Ding, Yufei and Geng, Haoran and Xu, Chaoyi and Fang, Xiaomeng and Zhang, Jiazhao and Wei, Songlin and Dai, Qiyu and Zhang, Zhizheng and Wang, He},
+            <br>
+            booktitle={2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 
+            <br>
+            title={Open6DOR: Benchmarking Open-instruction 6-DoF Object Rearrangement and A VLM-based Approach}, 
+            <br>
+            year={2024},
+            <br>
+            volume={},
+            <br>
+            number={},
+            <br>
+            pages={7359-7366},
+            <br>
+            keywords={Three-dimensional displays;Benchmark testing;Propulsion;6-DOF;Real-time systems;Artificial intelligence;Intelligent robots;Synthetic data},
+            <br>
+            doi={10.1109/IROS58592.2024.10802733}
+            <br>
+          }
+
+        </p>
+        <br>
+        <em><strong>IROS 2024, <b><font color='red'>Oral Presentation</font></b></strong></em>
+        <!-- <br>
+        <em><strong>CVPR 2024 @ VLADA, <b><font color='red'>Oral Presentation</font></b></strong></em>
+        <br>
+        <em><strong>ICRA 2024 @ 3D Manipulation, <b><font color='red'>Spotlight Presentation</font></b></strong></em> -->
+        <p></p>
+        <p> We present Open6DOR, a challenging and comprehensive benchmark for open-instruction 6-DoF 
+          object rearrangement tasks. Following this, we propose a zero-shot and robust method, 
+          Open6DORGPT, which proves effective in demanding simulation environments and real-world scenarios.</p>
+      </td>
+    </tr>
+
+
+    <!-- Simulately -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:30px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/simulately_logo.png' width="180"></div>
+          <!-- <br> -->
+          <img src='images/simulately_logo.png' width="180">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://simulately.wiki/" target="_blank">
+          <papertitle><br>Simulately: Handy information and resources for physics simulators for robot learning research.</papertitle>
+        </a>
+      <br>
+        <a:focus><strong>Haoran Geng</strong></a:focus>
+        <a class="a2" href="https://yuyangli.com/" target="_blank">Yuyang Li</a>,
+        <a class="a2" href="https://yzqin.github.io/" target="_blank">Yuzhe Qin</a>,
+        <a class="a2" href="http://stevengong.net/" target="_blank">Ran Gong</a>,
+        <a class="a2" href="https://wensi-ai.github.io/" target="_blank">Wensi Ai</a>,
+        <a class="a2" href="https://cypypccpy.github.io/" target="_blank">Yuanpei Chen</a>,
+        <a class="a2" href="https://xiaoyao-li.github.io/" target="_blank">Puhao Li</a>,
+        <a class="a2" href="https://dali-jack.github.io/Junfeng-Ni/" target="_blank">Junfeng Ni</a>,
+        <a class="a2" href="https://www.zhou-xian.com/" target="_blank">Zhou Xian</a>,
+        <a class="a2" href="http://wei.songl.in/" target="_blank">Songlin Wei</a>,
+        <a class="a2" href="https://qq456cvb.github.io/" target="_blank">Yang You</a>,
+        <a class="a2" href="https://github.com/Selina2023" target="_blank">Yufei Ding</a>,
+        <a class="a2" href="https://github.com/mzhmxzh" target="_blank">Jialiang Zhang</a>
+        <br>
+        <a href="https://simulately.wiki/" target="_blank">Website</a>
+        /
+        <a href="https://github.com/geng-haoran/Simulately" target="_blank">Github</a>
+
+        <br>
+        <em><strong>Open-source Project</strong></em>
+        <br>
+        <em><strong>Selected into <a class="a2" href="https://drive.google.com/file/d/1139Cai5XapdH3DgNMRxemHE-NEUfJPS_/view" target="_blank">CMU 16-831</a></strong></em>
+        
+        <p></p>
+        <p> Simulately is a project where we gather useful information of robotics & physics simulators for cutting-edge robot learning research.</p>
+      </td>
+    </tr>
+
+    <!-- SAGE -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/sage.jpg' width="200"></div>
+          <!-- <br> -->
+          <img src='images/sage.jpg' width="200">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://geng-haoran.github.io/SAGE/" target="_blank">
+          <papertitle><br>SAGE🌿: Bridging Semantic and Actionable Parts for Generalizable Articulated-Object Manipulation under Language Instructions</papertitle>
+        </a>
+      <br>
+        <a:focus><strong>Haoran Geng*</strong></a:focus>,
+        <a class="a2" href="http://wei.songl.in/" target="_blank">Songlin Wei</a>*,
+        <a class="a2" href="https://cs.stanford.edu/~congyue/" target="_blank">Congyue Deng</a>,
+        <a class="a2" href="https://cs.stanford.edu/people/bshen88/" target="_blank">Bokui Shen</a>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a><span>&#8224;</span>,
+        <a class="a2" href="https://geometry.stanford.edu/?member=guibasindex.html" target="_blank">Leonidas Guibas</a><span>&#8224;</span>
+        <br>
+        <a href="https://arxiv.org/abs/2312.01307" target="_blank">ArXiv</a>
+        /
+        <a href="https://geng-haoran.github.io/SAGE/" target="_blank">Project Page</a>
+        /
+        <!-- <a href="https://github.com/PKU-EPIC/UniDexGrasp2">Code</a>
+        / -->
+        <a href="https://www.youtube.com/watch?v=DnFmsNzzbWY">Video</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('sage'))">Bibtex</a>
+        <p id="sage" style="font:1px; display: none">
+          @misc{geng2023sage,
+            <br>
+            title={SAGE: Bridging Semantic and Actionable Parts for GEneralizable Articulated-Object Manipulation under Language Instructions}, 
+            <br>
+            author={Haoran Geng and Songlin Wei and Congyue Deng and Bokui Shen and He Wang and Leonidas Guibas},
+            <br>
+            year={2023},
+            <br>
+            eprint={2312.01307},
+            <br>
+            archivePrefix={arXiv},
+            <br>
+            primaryClass={cs.RO}
+          } 
+        </p>
+        <br>
+        <em><strong>RSS 2024, <b><font color='red'>Oral Presentation</font></b></strong></em>
+        <br>
+        <em><strong>RSS 2024 @ SemRob, <b><font color='red'>Best Paper Award</font></b></strong></em>
+        <p></p>
+        <p> We present SAGE, a framework bridging the understanding of semantic and actionable parts 
+          for generalizable manipulation of articulated objects using Large Language Models(LLMs)
+          and Visual-Language Models(VLMs).</p>
+      </td>
+    </tr>
+
+    <!-- ag2manip -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <img src='images/ag2manip.jpg' width="200"></div>
+          <img src='images/ag2manip.jpg' width="200">
+        </div>
+        <script type="text/javascript">
+          function ag2manip_start() {
+            document.getElementById('ag2manip_image').style.opacity = "1";
+          }
+
+          function ag2manip_stop() {
+            document.getElementById('ag2manip_image').style.opacity = "0";
+          }
+          ag2manip_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://xiaoyao-li.github.io/research/ag2manip/" target="_blank">
+          <papertitle><br>Ag2Manip: Learning Novel Manipulation Skills with Agent-Agnostic Visual and Action Representations</papertitle>
+        </a>
+      <br>
+      <!-- <td style="padding:20px;width:70%;vertical-align:middle">
+        <papertitle>Ag2Manip: Learning Novel Manipulation Skills with Agent-Agnostic Visual and Action Representations</papertitle>
+        <br> -->
+        <a class="a2" href="https://xiaoyao-li.github.io/" target="_blank">Puhao Li*</a>,
+        <a class="a2" href="http://tengyu.ai/" target="_blank">Tengyu Liu*</a>,
+        <a class="a2" href="https://yuyangli.com" target="_blank">Yuyang Li</a>,
+        <a class="a2" href="https://sites.google.com/view/muzhihan/home" target="_blank">Muzhi Han</a>,
+        <a:focus><strong>Haoran Geng</strong></a:focus>,
+        <a class="a2" href="https://scholar.google.com/citations?user=uPk5l1EAAAAJ&hl=en" target="_blank">Shu Wang</a>,
+        <a class="a2" href="https://yzhu.io" target="_blank">Yixin Zhu</a>,
+        <a class="a2" href="https://www.zhusongchun.net/" target="_blank">Song-Chun Zhu</a>,
+        <a class="a2" href="https://siyuanhuang.com" target="_blank">Siyuan Huang</a>
+        <br>
+        <a href="https://arxiv.org/abs/2404.17521" target="_blank">Paper</a>/
+        <!-- &nbsp -->
+        <a href="https://github.com/xiaoyao-li/ag2manip" target="_blank">Code</a>/
+        <!-- &nbsp -->
+        <a href="https://xiaoyao-li.github.io/research/ag2manip/" target="_blank">Project Page</a>
+        <a href="javascript:hideshow(document.getElementById('sage'))">Bibtex</a>
+        <p id="sage" style="font:1px; display: none">
+          @misc{li2024ag2maniplearningnovelmanipulation,
+            <br>
+            title={Ag2Manip: Learning Novel Manipulation Skills with Agent-Agnostic Visual and Action Representations}, 
+            <br>
+            author={Puhao Li and Tengyu Liu and Yuyang Li and Muzhi Han and Haoran Geng and Shu Wang and Yixin Zhu and Song-Chun Zhu and Siyuan Huang},
+            <br>
+            year={2024},
+            <br>
+            eprint={2404.17521},
+            <br>
+            archivePrefix={arXiv},
+            <br>
+            primaryClass={cs.RO},
+            <br>
+            url={https://arxiv.org/abs/2404.17521}, 
+            <br>
+          }
+        </p>
+        <br>
+
+        <em><strong>IROS 2024, <b><font color='red'>Oral Presentation</font></b></strong></em>
+        <br>
+        <p>
+        We introduce Ag2Manip, which enables various robotic manipulation tasks without any domain-specific demonstrations. Ag2Manip also supports robust imitation learning of manipulation skills in the real world.
+        </p>
+      </td>
+    </tr>
+
+    <!-- ShapeLLM -->
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/shapellm.jpg' width="200"></div>
+          <!-- <br> -->
+          <img src='images/shapellm.jpg' width="200">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://sites.google.com/view/manipllm" target="_blank">
+          <papertitle><br>ShapeLLM: Universal 3D Object Understanding for Embodied Interaction</papertitle>
+        </a>
+      <br>
+        <a class="a2" href="https://qizekun.github.io/" target="_blank">Zekun Qi</a>,
+        <a class="a2" href="https://runpeidong.com/" target="_blank">Runpei Dong</a>,
+        <a class="a2" href="" target="_blank">Shaochen Zhang</a>,
+        <a:focus><strong>Haoran Geng</strong></a:focus>,
+        <a class="a2" href="" target="_blank">Chunrui Han</a>,
+        <a class="a2" href="" target="_blank">Zheng Ge</a>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a>,
+        <a class="a2" href="https://ericyi.github.io/" target="_blank">Li Yi</a>,
+        <a class="a2" href="http://group.iiis.tsinghua.edu.cn/~maks/leader.html" target="_blank">Kaisheng Ma</a>
+        <br>
+        <a href="https://arxiv.org/abs/2402.17766" target="_blank">ArXiv</a>
+        /
+        <a href="https://qizekun.github.io/shapellm/" target="_blank">Project Page</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('shapellm'))">Bibtex</a>
+        <p id="shapellm" style="font:1px; display: none">
+          @article{shapellm24,
+            <br>
+            author       = {Zekun Qi and Runpei Dong and Shaochen Zhang and Haoran Geng and Chunrui Han and  Zheng Ge and He Wang and Li Yi and Kaisheng Ma},
+            <br>
+            title        = {ShapeLLM: Universal 3D Object Understanding for Embodied Interaction},
+            <br>
+            journal      = {CoRR},
+            <br>
+            volume       = {abs/2402.17766},
+            <br>
+            year         = {2024},
+            <br>
+            eprinttype    = {arXiv},
+            <br>
+            eprint       = {2402.17766},
+            <br>
+          }
+        </p>
+        <br>
+        <em><strong>ECCV 2024</strong></em>
+        <p></p>
+        <p> We present ShapeLLM, the first 3D Multimodal Large Language Model (LLM) designed for embodied interaction, exploring a universal 3D object understanding with 3D point clouds and languages. </p>
+      </td>
+    </tr>
+
+    <!-- ManipLLM -->
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <!-- <br> -->
+            <img src='images/manipllm.jpg' width="200"></div>
+          <!-- <br> -->
+          <img src='images/manipllm.jpg' width="200">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://sites.google.com/view/manipllm" target="_blank">
+          <papertitle><br>ManipLLM:Embodied Multimodal Large Language Model for Object-Centric Robotic Manipulation </papertitle>
+        </a>
+      <br>
+        <a class="a2" href="https://clorislili.github.io/clorisLi/" target="_blank">Xiaoqi Li</a>,
+        <a class="a2" href="https://clorislili.github.io/clorisLi/" target="_blank">Mingxu Zhang</a>,
+        <a class="a2" href="https://gengyiran.github.io/" target="_blank">Yiran Geng</a>,
+        <a:focus><strong>Haoran Geng</strong></a:focus>,
+        <a class="a2" href="https://dblp.org/pid/337/1595.html" target="_blank">Yuxing Long</a>,
+        <a class="a2" href="https://sxy7147.github.io/" target="_blank">Yan Shen</a>,
+        <a class="a2" href="https://zrrskywalker.github.io/" target="_blank">Renrui Zhang</a>,
+        <a class="a2" href="https://liujiaming1996.github.io/" target="_blank">Jiaming Liu</a>,
+        <a class="a2" href="https://zsdonghao.github.io/" target="_blank">Hao Dong</a><span>&#8224;</span>
+        <br>
+        <a href="https://arxiv.org/abs/2312.16217" target="_blank">ArXiv</a>
+        /
+        <a href="https://sites.google.com/view/manipllm" target="_blank">Project Page</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('manipllm'))">Bibtex</a>
+        <p id="manipllm" style="font:1px; display: none">
+          @misc{li2023manipllm,
+            <br>
+            title={ManipLLM: Embodied Multimodal Large Language Model for Object-Centric Robotic Manipulation}, 
+            <br>
+            author={Xiaoqi Li and Mingxu Zhang and Yiran Geng and Haoran Geng and Yuxing Long and Yan Shen and Renrui Zhang and Jiaming Liu and Hao Dong},
+            <br>
+            year={2023},
+            <br>
+            eprint={2312.16217},
+            <br>
+            archivePrefix={arXiv},
+            <br>
+            primaryClass={cs.CV}
+            <br>
+      }
+        </p>
+        <br>
+        <em><strong>CVPR 2024</strong></em>
+        <p></p>
+        <p> We present ManipLLM, introducing an innovative approach for robot manipulation that leverages the robust 
+          reasoning capabilities of Multimodal Large Language Models (MLLMs) to enhance the stability 
+          and generalization of manipulation. </p>
+      </td>
+    </tr>
+
+    <!-- MAKE A DONUT -->
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <!-- <br>
+        <br> -->
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <br>
+            <img src='images/donut.jpg' width="200"></div>
+          <br>
+          <img src='images/donut.jpg' width="200">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="" target="_blank">
+          <papertitle>Make a Donut🍩: Language-guided Hierarchical EMD-Space Planning for Zero-shot Deformable Object Manipulation
+          </papertitle>
+        </a>
+        <br>
+        <a class="a2" href="https://qq456cvb.github.io/" target="_blank">Yang You</a>,
+        <a class="a2" href="https://cs.stanford.edu/people/bshen88/" target="_blank">Bokui Shen</a>,
+        <a class="a2" href="https://cs.stanford.edu/~congyue/" target="_blank">Congyue Deng</a>,
+        <a:focus><strong>Haoran Geng</strong></a:focus>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a>,
+        <a class="a2" href="https://geometry.stanford.edu/?member=guibasindex.html" target="_blank">Leonidas Guibas</a><span>&#8224;</span>
+        <br>
+        <!-- <br> -->
+        <a href="https://arxiv.org/abs/2311.02787" target="_blank">ArXiv</a>
+        /
+        <a href="" target="_blank">Project Page</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('donut'))">Bibtex</a>
+        <p id="donut" style="font:1px; display: none">
+          @misc{
+            <br>
+            you2023make,
+            <br>
+            title={Make a Donut: Language-Guided Hierarchical EMD-Space Planning for Zero-shot Deformable Object Manipulation}, 
+            <br>
+            author={Yang You and Bokui Shen and Congyue Deng and Haoran Geng and He Wang and Leonidas Guibas},
+            <br>
+            year={2023},
+            <br>
+            eprint={2311.02787},
+            <br>
+            archivePrefix={arXiv},
+            <br>
+            primaryClass={cs.RO}
+            <br>
+            }
+        </p>
+        <!-- /
+        <a href="https://github.com/PKU-EPIC/UniDexGrasp2">Code</a> -->
+        <!-- /
+        <a href="https://mp.weixin.qq.com/s/iSTOB2OjJeJYfvTUQ55YNw">Media(CFCS)</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('unidexgrasp++'))">Bibtex</a>
+        <p id="unidexgrasp++" style="font:1px; display: none">
+          @article{wan2023unidexgrasp++,
+            <br>
+            title={UniDexGrasp++: Improving Dexterous Grasping Policy Learning via Geometry-aware Curriculum and Iterative Generalist-Specialist Learning},
+            <br>
+            author={Wan, Weikang and Geng, Haoran and Liu, Yun and Shan, Zikang and Yang, Yaodong and Yi, Li and Wang, He},
+            <br>
+            journal={arXiv preprint arXiv:2304.00464},
+            <br>
+            year={2023}
+          }
+        </p> -->
+        <br>
+        <em><strong>RA-L</strong></em>
+        <!-- <br> -->
+        <!-- <em><strong>RSS 2023 @ Learning Dexterous Manipulation, <b><font color='red'>Spotlight Presentation</font></b></strong></em> -->
+        <p></p>
+        <p> In this work, we introduce a demonstration-free hierarchical planning approach capable of tackling intricate
+          long-horizon tasks without necessitating any training</p>
+      </td>
+    </tr>
+
+    <!-- UniDexGrasp++ -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <!-- <br>
+        <br> -->
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <br>
+            <img src='images/UniDexGrasp++large.png' width="200"></div>
+          <br>
+          <img src='images/UniDexGrasp++large.png' width="200">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://pku-epic.github.io/UniDexGrasp++/" target="_blank">
+          <papertitle>UniDexGrasp++: Improving Dexterous Grasping Policy Learning via Geometry-aware Curriculum and Iterative Generalist-Specialist Learning</papertitle>
+        </a>
+        <br>
+        <a class="a2" href="https://wkwan7.github.io/" target="_blank">Weikang Wan</a>*,
+        <a:focus><strong>Haoran Geng*</strong></a:focus>,
+        <a:focus>Yun Liu</a:focus>,
+        <a:focus>Zikang Shan</a:focus>,
+        <a class="a2" href="https://www.yangyaodong.com/" target="_blank">Yaodong Yang</a>,
+        <a class="a2" href="https://ericyi.github.io/" target="_blank">Li Yi</a>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a><span>&#8224;</span>
+        <br>
+        (*equal contribution)
+        <br>
+        <a href="https://arxiv.org/abs/2304.00464" target="_blank">ArXiv</a>
+        /
+        <a href="https://pku-epic.github.io/UniDexGrasp++/" target="_blank">Project Page</a>
+        /
+        <a href="https://github.com/PKU-EPIC/UniDexGrasp2">Code</a>
+        /
+        <a href="https://mp.weixin.qq.com/s/iSTOB2OjJeJYfvTUQ55YNw">Media(CFCS)</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('unidexgrasp++'))">Bibtex</a>
+        <p id="unidexgrasp++" style="font:1px; display: none">
+          @article{wan2023unidexgrasp++,
+            <br>
+            title={UniDexGrasp++: Improving Dexterous Grasping Policy Learning via Geometry-aware Curriculum and Iterative Generalist-Specialist Learning},
+            <br>
+            author={Wan, Weikang and Geng, Haoran and Liu, Yun and Shan, Zikang and Yang, Yaodong and Yi, Li and Wang, He},
+            <br>
+            journal={arXiv preprint arXiv:2304.00464},
+            <br>
+            year={2023}
+          }
+        </p>
+        <br>
+        <em><strong>ICCV 2023, <b><font color='red'>Oral Presentation</font></b></strong> with <b><font color='red'>all top ratings (strong accept)</font></b></strong></em>
+        <br>
+        <em><strong>ICCV 2023, <b><font color='red'>Best Paper Finalist</font></b></strong> </em>
+        <!-- <br> -->
+        <!-- <em><strong>RSS 2023 @ Learning Dexterous Manipulation, <b><font color='red'>Spotlight Presentation</font></b></strong></em> -->
+        <p></p>
+        <p> We propose a novel, object-agnostic method for learning a universal policy for dexterous object 
+          grasping from realistic point cloud observations and proprioceptive information under a table-top setting.</p>
+      </td>
+    </tr>
+
+    <!-- ARNOLD -->
+    <tr>
+     <td style="padding:20px;width:30%;vertical-align:middle">
+       <div class="one">
+         <div class="two" id='malle_image'>
+           <br>
+           <img src='images/arnold.gif' width="190"></div>
+         <br>
+         <img src='images/arnold.gif' width="190">
+       </div>
+       <script type="text/javascript">
+         function malle_start() {
+           document.getElementById('malle_image').style.opacity = "1";
+         }
+         function malle_stop() {
+           document.getElementById('malle_image').style.opacity = "0";
+         }
+         malle_stop()
+       </script>
+     </td>
+     <td style="padding:20px;width:70%;vertical-align:middle">
+       <a href="https://arnold-benchmark.github.io/" target="_blank">
+         <papertitle>ARNOLD: A Benchmark for Language-Grounded Task Learning With Continuous States in Realistic 3D Scenes</papertitle>
+       </a>
+       <br>
+       <a class="a2" href="https://nikepupu.github.io/" target="_blank">Ran Gong</a>*,
+       <a class="a2" href="https://huangjy-pku.github.io/" target="_blank">Jiangyong Huang</a>*,
+       <a class="a2" href="https://www.zyz.lol/app/aboutme/aboutme.html" target="_blank">Yizhou Zhao</a>,
+       <a:focus><strong>Haoran Geng</strong></a:focus>,
+       <a class="a2" href="https://xfgao.github.io/" target="_blank">Xiaofeng Gao</a>,
+       <a class="a2" href="https://qywu.github.io/" target="_blank">Qingyang Wu</a>,
+       <a class="a2" href="https://wensi-ai.github.io/" target="_blank">Wensi Ai</a>,
+       <a class="a2" href="https://www.linkedin.com/in/josephziheng/" target="_blank">Ziheng Zhou</a>,
+       <a class="a2" href="http://web.cs.ucla.edu/~dt/" target="_blank">Demetri Terzopoulos</a>,
+       <a class="a2" href="http://www.stat.ucla.edu/~sczhu/" target="_blank">Song-Chun Zhu</a>,
+       <a class="a2" href="https://buzz-beater.github.io/" target="_blank">Baoxiong Jia</a>,
+       <a class="a2" href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a>,
+       <br>
+       <a href="http://arxiv.org/abs/2304.04321" target="_blank">ArXiv</a>
+       /
+       <a href="https://arnold-benchmark.github.io/" target="_blank">Project Page</a>
+       /
+       <a href="https://github.com/arnold-benchmark/arnold" target="_blank">Code</a>
+       /
+       <a href="javascript:hideshow(document.getElementById('ARNOLD'))">Bibtex</a>
+       
+       <!-- <pre> -->
+         <p id="ARNOLD" style="font:1px; display: none">
+         @article{gong2023arnold,
+           <br>
+           title={ARNOLD: A Benchmark for Language-Grounded Task Learning With Continuous States in Realistic 3D Scenes},
+           <br>
+           author={Gong, Ran and Huang, Jiangyong and Zhao, Yizhou and Geng, Haoran and Gao, Xiaofeng and Wu, Qingyang and Ai, Wensi and Zhou, Ziheng and Terzopoulos, Demetri and Zhu, Song-Chun and Jia, Baoxiong and Huang, Siyuan},
+           <br>
+           journal={arXiv preprint arXiv:2304.04321},
+           <br>
+           year={2023}
+           <br>
+         }
+     </p >
+       <br>
+       <em><strong>ICCV 2023</strong></em>
+       <br>
+       <em><strong>CoRL 2022 @ LangRob</strong>, <b><font color='red'>Spotlight Presentation</font></b></em>
+       <br>
+       <!-- <em>Under Review</font></b></em> -->
+       <p></p>
+       <p>We present ARNOLD, a benchmark that evaluates language-grounded task learning with continuous states in realistic 3D scenes. 
+       </p>
+     </td>
+    </tr>
+
+    <!-- ReDMan -->
+    <!-- <tr>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <br>
+            <img src='images/ReDMan.png' width="190"></div>
+            <br>
+          <img src='images/ReDMan.png' width="190">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="pdf/RedMan.pdf">
+          <papertitle>ReDMan: Reliable Dexterous Manipulation with Safe Reinforcement Learning</papertitle>
+        </a>
+        <br>
+        <a class="a2", href="https://gengyiran.github.io/" target="_blank">Yiran Geng</a>*,
+        <a:focus>Jiaming Ji*</a:focus>, 
+        <a class="a2" href="https://cypypccpy.github.io/" target="_blank">Yuanpei Chen</a>*,
+        <a:focus><strong>Haoran Geng</strong></a:focus>,
+        <a:focus>Fangwei Zhong</a:focus>,
+        <a class="a2" href="https://www.yangyaodong.com/" target="_blank">Yaodong Yang</a><span>&#8224;</span>,
+        <br>
+        <a href="pdf/RedMan.pdf" target="_blank">Paper</a>
+        /
+        <a href="https://github.com/OmniSafeAI/ReDMan" target="_blank">Code</a>
+        <br>
+        <em><strong>Machine Learning (Journal) 2023</strong></em>
+        <p></p>
+        <p>
+          We introduce ReDMan, an open-source simulation platform that provides a standardized implementation of safe RL algorithms for Reliable Dexterous Manipulation. 
+        </p>
+      </td>
+    </tr> -->
+
+    <!-- GAPartNet -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <br>
+            <img src='images/GAPartNet_gif.gif' width="190"></div>
+          <br>
+          <img src='images/GAPartNet_gif.gif' width="190">
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://pku-epic.github.io/GAPartNet/" target="_blank">
+          <papertitle><br>GAPartNet: Cross-Category Domain-Generalizable Object Perception and Manipulation via Generalizable and Actionable Parts</papertitle>
+        </a>
+        <br>
+        <a:focus><strong>Haoran Geng*</strong></a:focus>,
+        <a class="a2" href="https://helinxu.github.io/" target="_blank">Helin Xu</a>*,
+        <a:focus>Chengyang Zhao</a:focus>*,
+        <a class="a2" href="https://chaoxu.xyz/#bio" target="_blank">Chao Xu</a>,
+        <a class="a2" href="https://ericyi.github.io/" target="_blank">Li Yi</a>,
+        <a class="a2" href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a><span>&#8224;</span>
+        <br>
+        <a href="https://arxiv.org/abs/2211.05272" target="_blank">ArXiv</a>
+        /
+        <a href="https://pku-epic.github.io/GAPartNet/" target="_blank">Project Page</a>
+        /
+        <a href="https://github.com/PKU-EPIC/GAPartNet" target="_blank">Code</a>
+        /
+        <a href="https://forms.gle/3qzv8z5vP2BT5ARN7" target="_blank">Dataset</a>
+        /
+        <a href="https://pku-epic.github.io/GAPartNet/images/poster.pdf" target="_blank">Poster</a>
+        /
+        <a href="https://cvpr.thecvf.com/virtual/2023/poster/22552" target="_blank">CVPR Page</a>
+        /
+        <a href="https://mp.weixin.qq.com/s/elWJx4wMzNtORQUlACOQ6w" target="_blank">Media(CFCS)</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('GApartNet'))">Bibtex</a>
+        
+        <!-- <pre> -->
+        <p id="GApartNet" style="font:1px; display: none">
+          @article{geng2022gapartnet,
+            <br>
+            title={GAPartNet: Cross-Category Domain-Generalizable Object Perception and Manipulation via Generalizable and Actionable Parts},
+            <br>
+            author={Geng, Haoran and Xu, Helin and Zhao, Chengyang and Xu, Chao and Yi, Li and Huang, Siyuan and Wang, He},
+            <br>
+            journal={arXiv preprint arXiv:2211.05272},
+            <br>
+            year={2022}
+            <br>
+        }
+        </p>
+      <!-- </pre> -->
+        <br>
+        <em><strong>CVPR 2023</strong>, <b><font color='red'>Highlight</font></b> (Top <b><font color='red'>2.5%</font></b> of submissions) with <b><font color='red'>all top ratings</font></b> </em>
+        <p></p>
+        <p>We propose to learn cross-category generalizable object perception and manipulation skills via Generalizable 
+          and Actionable Parts(GAPart), and present GAPartNet, a large-scale interactive dataset with rich part annotations.
+        </p>
+      </td>
+    </tr>
+     
+    <!-- PartManip -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <img src='images/PartManip_half2.png' width="194"></div>
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <p></p>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://pku-epic.github.io/PartManip/" target="_blank">
+          <papertitle>PartManip: Learning Cross-Category Generalizable Part Manipulation Policy
+            from Point Cloud Observations</papertitle>
+        </a>
+        <br>
+        <a:focus><strong>Haoran Geng*</strong></a:focus>,
+        <a:focus>Ziming Li</a:focus>*,
+        <a class="a2", href="https://gengyiran.github.io/" target="_blank">Yiran Geng</a>,
+        <a class="a2" href="https://jychen18.github.io/" target="_blank">Jiayi Chen</a>,
+        <a class="a2" href="https://zsdonghao.github.io/" target="_blank">Hao Dong</a>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a><span>&#8224;</span>
+        <br>
+        <a href="https://arxiv.org/abs/2303.16958" target="_blank">ArXiv</a>
+        /
+        <a href="https://pku-epic.github.io/PartManip/" target="_blank">Project Page</a>
+        /
+        <a href="https://github.com/PKU-EPIC/PartManip" target="_blank">Code</a>
+        /
+        <a href="https://forms.gle/DqdPvLE6pNWZf2XR8" target="_blank">Dataset</a>
+        /
+        <a href="pdf/PartManip Poster_final.pdf" target="_blank">Poster</a>
+        /
+        <a href="https://cvpr.thecvf.com/virtual/2023/poster/22553" target="_blank">CVPR Page</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('PartManip'))">Bibtex</a>
+        
+        <!-- <pre> -->
+          <p id="PartManip" style="font:1px; display: none">
+          @article{geng2023partmanip,
+            <br>
+            title={PartManip: Learning Cross-Category Generalizable Part Manipulation Policy from Point Cloud Observations},
+            <br>
+            author={Geng, Haoran and Li, Ziming and Geng, Yiran and Chen, Jiayi and Dong, Hao and Wang, He},
+            <br>
+            journal={arXiv preprint arXiv:2303.16958},
+            <br>
+            year={2023}
+            <br>
+          }
+      </p >
+        <br>
+        <em><strong>CVPR 2023</strong></em>
+        <p></p>
+        
+        <p>We introduce a large-scale, cross-category part-based object manipulation benchmark 
+          with tasks in realistic, vision-based settings and design a novel augmented state-to-vision 
+          distillation method for these challenging tasks. </p>
+      </td>
+    </tr>
+
+    <!-- UniDexGrasp -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()"  bgcolor="#ffffdc">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <br>
+            <img src='images/uni_half.png' width="190"></div>
+            <br>
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://pku-epic.github.io/UniDexGrasp/" target="_blank">
+          <papertitle><br>UniDexGrasp: Universal Robotic Dexterous Grasping via Learning Diverse Proposal Generation and Goal-Conditioned Policy</papertitle>
+        </a>
+        <br>
+        <a class="a2" href="https://xyz-99.github.io/" target="_blank">Yinzhen Xu</a>*,
+        <a class="a2" href="https://wkwan7.github.io/" target="_blank">Weikang Wan</a>*,
+        <a:focus>Jialiang Zhang*</a:focus>,
+        <a:focus>Haoran Liu*</a:focus>,
+        <a:focus>Zikang Shan</a:focus>,
+        <a:focus>Hao Shen</a:focus>,
+        <a:focus>Ruicheng Wang</a:focus>,
+        <a:focus><strong>Haoran Geng</strong></a:focus>,
+        <a class="a2" href="https://yijiaweng.github.io/" target="_blank">Yijia Weng</a>,
+        <a class="a2" href="https://jychen18.github.io/" target="_blank">Jiayi Chen</a>,
+        <a class="a2" href="https://tengyu.ai/" target="_blank">Tengyu Liu</a>,
+        <a class="a2" href="https://ericyi.github.io/" target="_blank">Li Yi</a>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a><span>&#8224;</span>
+        <br>
+        <a href="https://arxiv.org/abs/2303.00938" target="_blank">ArXiv</a>
+        /
+        <a href="https://pku-epic.github.io/UniDexGrasp/" target="_blank">Project Page</a>
+        /
+        <a href="https://github.com/PKU-EPIC/UniDexGrasp" target="_blank">Code</a>
+        /
+        <a href="https://cvpr.thecvf.com/virtual/2023/poster/21614" target="_blank">CVPR Page</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('UniDexGrasp'))">Bibtex</a>
+        <!-- <pre> -->
+          <p id="UniDexGrasp" style="font:1px; display: none">
+            @article{xu2023unidexgrasp,
+            <br>
+            title={UniDexGrasp: Universal Robotic Dexterous Grasping via Learning Diverse Proposal Generation and Goal-Conditioned Policy},
+            <br>
+            author={Xu, Yinzhen and Wan, Weikang and Zhang, Jialiang and Liu, Haoran and Shan, Zikang and Shen, Hao and Wang, Ruicheng and Geng, Haoran and Weng, Yijia and Chen, Jiayi and others},
+            <br>
+            journal={arXiv preprint arXiv:2303.00938},
+            <br>
+            year={2023}
+            <br>
+            }
+      </p >
+        <br>
+        <em><strong>CVPR 2023</strong></em>
+        <p></p>
+        <p> We tackle the problem of learning universal robotic dexterous grasping from a 
+          point cloud observation under a table-top setting. </p>
+      </td>
+    </tr>
+
+    <!-- PLAfford -->
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <img src='images/PLAfford.jpg' width="194"></div>
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <p></p>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="" target="_blank">
+          <papertitle>Learning Part-Aware Visual Actionable Affordance for 3D Articulated Object Manipulation</papertitle>
+        </a>
+        <br>
+        <a:focus> Yuanchen Ju*</a>,
+        <a:focus><strong>Haoran Geng*</strong></a:focus>,
+        <a:focus>Ming Yang</a:focus>*,
+        <!-- <a class="a2" href="https://jychen18.github.io/" target="_blank">Jiayi Chen</a>, -->
+        <a class="a2", href="https://gengyiran.github.io/" target="_blank">Yiran Geng</a>,
+        <a:focus>Yaroslav Ponomarenko</a:focus>,
+        <a:focus>Taewhan Kim</a:focus>,
+        <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a>,
+        <a class="a2" href="https://zsdonghao.github.io/" target="_blank">Hao Dong</a><span>&#8224;</span>
+        <br>
+        <a href="">Paper</a>
+        /
+        <a href="https://drive.google.com/file/d/19bPWbLLnsQTBU5xT64yRQ6HgbOjrZoKv/view?usp=sharing" target="_blank">Video</a>
+        /
+        <a href="https://sites.google.com/view/cvpr2023-3d-vision-robotics" target="_blank">Workshop</a>
+        
+        <!-- <pre> -->
+          <p id="PartManip" style="font:1px; display: none">
+          @article{geng2023partmanip,
+            <br>
+            title={PartManip: Learning Cross-Category Generalizable Part Manipulation Policy from Point Cloud Observations},
+            <br>
+            author={Geng, Haoran and Li, Ziming and Geng, Yiran and Chen, Jiayi and Dong, Hao and Wang, He},
+            <br>
+            journal={arXiv preprint arXiv:2303.16958},
+            <br>
+            year={2023}
+            <br>
+          }
+      </p >
+        <br>
+        <em><strong>CVPR 2023 @ 3DVR</strong>, <b><font color='red'>Spotlight Presentation</font></b></em>
+        <p></p>
+        
+        <p>We introduces Part-aware Affordance Learning methods. Our approach first learns a part 
+          prior, subsequently generating an affordance map. We further enhance precision by 
+          introducing a part-level scoring system, designed to identify the best part for manipulation. </p>
+      </td>
+    </tr>
+    
+    <!-- RLAfford -->
+    <tr>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <br>
+            <img src='images/E2E_3.png' width="190"></div>
+            <br>
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://sites.google.com/view/rlafford/" target="_blank">
+          <papertitle><br>RLAfford: End-to-End Affordance Learning for Robotic Manipulation</papertitle>
+        </a>
+        <br>
+        <a class="a2", href="https://gengyiran.github.io/" target="_blank">Yiran Geng</a>*,
+        <a class="a2" href="https://boshi-an.github.io/" target="_blank">Boshi An</a>*,
+        <a:focus><strong>Haoran Geng</strong></a:focus>,
+        <a class="a2" href="https://cypypccpy.github.io/" target="_blank">Yuanpei Chen</a>,
+        <a class="a2" href="https://www.yangyaodong.com/" target="_blank">Yaodong Yang</a><span>&#8224;</span>,
+        <a class="a2" href="https://zsdonghao.github.io/" target="_blank">Hao Dong</a><span>&#8224;</span>
+        <br>
+        <a href="https://arxiv.org/abs/2209.12941" target="_blank">ArXiv</a>
+        /
+        <a href="https://sites.google.com/view/rlafford/" target="_blank">Project Page</a>
+        /
+        <a href="https://www.bilibili.com/video/BV1cM411b7ZD/?spm_id_from=444.41.list.card_archive.click" target="_blank">Video</a>
+        /
+        <a href="https://github.com/hyperplane-lab/RLAfford" target="_blank">Code</a>
+        /
+        <a href="https://mp.weixin.qq.com/s?__biz=MzU0MjU5NjQ3NA==&mid=2247498641&idx=1&sn=06a3f2a314e43def32df5ee76e47fa55&chksm=fb1af784cc6d7e92852a53e994d57139d7beed0e379bf3ea7c5d66e4fe558b4a70d14f19832d&mpshare=1&scene=1&srcid=0125YlFVj1P4UMAt6V9CcKKq&sharer_sharetime=1674658986915&sharer_shareid=71465da75fb2e1df3c97cf572a6ce074#rd"
+        target="_blank">Media (CFCS)</a>
+        /
+        <a href="javascript:hideshow(document.getElementById('rlafford'))">Bibtex</a>
+          <p id="rlafford" style="font:1px; display: none">
+            @article{geng2022end,
+            <br>
+            title={End-to-End Affordance Learning for Robotic Manipulation},
+            <br>
+            author={Geng, Yiran and An, Boshi and Geng, Haoran and Chen, Yuanpei and Yang, Yaodong and Dong, Hao},
+            <br>
+            journal={International Conference on Robotics and Automation (ICRA)},
+            <br>
+            year={2023}
+            <br>
+            }
+      </p >
+        <br>
+        <em><strong>ICRA 2023</strong></em>
+        <p></p>
+        <p>In this study, we take advantage of visual affordance by using the contact information generated during the RL training process to predict contact maps of interest. </p>
+      </td>
+    </tr>
+
+  </tbody></table>
+
+  <!-- Before 2022 -->
+  <table id="before2022" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top: 100px;"><tbody>
+    <br>
+    <heading>Before 2022</heading>
+    <br>
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='malle_image'>
+            <br>
+            <img src='images/YINGCAI2.png' width="190"></div>
+            <br>
+        </div>
+        <script type="text/javascript">
+          function malle_start() {
+            document.getElementById('malle_image').style.opacity = "1";
+          }
+          function malle_stop() {
+            document.getElementById('malle_image').style.opacity = "0";
+          }
+          malle_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="pdf/YINGCAI.pdf" target="_blank">
+          <papertitle>Ministry of Education Talent Program Thesis (Physics Track)</papertitle>
+        </a>
+        <br>
+        <a:focus><strong>Haoran Geng</strong></a:focus>, 
+        <a class="a2", href="https://gengyiran.github.io/" target="_blank">Yiran Geng</a>, 
+        <a:focus>Xintian Dong</a:focus>,
+        <a:focus>Yue Meng</a:focus>,
+        <a:focus>Xujv Sun</a:focus>,
+        <a:focus>Houpu Niu</a:focus>
+        <br>
+        <a href=pdf/YINGCAI.pdf target="_blank">PDF</a>
+        <br>
+        <!-- <em>Selected as the Outstanding Thesis of the National Physics Forum 2018</em> -->
+        <p>
+          I was selected for the Ministry of Education Talent Program and conducted physics research at Nankai University during my high school years.
+      </td>
+  </tbody></table>
+
+  <!-- Recent Talks -->
+  <!-- <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <br>
+          <heading>Recent Talks</heading>
+        <br>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+          <P>
+            <li>I gave an Oral Presentation on <em>UniDexGrasp++</em> at <a href="https://iccv2023.thecvf.com/main.conference.program-107.php" target="_blank">ICCV</a> on October 4, 2023.
+            </li>
+            <li>I presented <em>Towards Generalizable Object Perception and Manipulation</em> at <a href="www.shenlanxueyuan.com" target="_blank">Shenlan</a> Open Courses on July 23, 2023.
+              <br>
+              <a href="./images/shenlan_poster.jpg" target="_blank">Poster</a>
+              /
+              <a href="https://www.shenlanxueyuan.com/open/course/195" target="_blank">Website</a>
+              /
+              <a href="https://www.shenlanxueyuan.com/open/course/195/lesson/180/liveToVideoPreview" target="_blank">Video</a>
+            </li>
+            <li>I presented <em>Towards Generalizable Object Perception and Manipulation</em> at <a href="https://engineering.stanford.edu/students-academics/programs/global-engineering-programs/chinese-ugvr/" target="_blank">Stanford UGVR</a> Research Salon on July 9, 2023.
+              <br>
+              <a href="https://drive.google.com/file/d/1hfktvO5A2P89nd09zvnqIxmBa282MpEO/view?usp=sharing" target="_blank">Slides</a>
+            </li>
+            <li>I presented <em>GAPartNet</em> at CVPR 2023 @ <a href="https://struco3d.github.io/cvpr2023/" target="_blank">StruCo3D</a> on June 18, 2023.
+              <br>
+              <a href="https://drive.google.com/file/d/1n-KZzTjg7J_AW2uxd_buxFd0CVsph02u/view?usp=sharing" target="_blank">Video</a>
+              /
+              <a href="pdf/GAPartNet_poster.pdf" target="_blank">Poster</a>
+            </li>
+            <li>I presented <em>Learning Part-Aware Visual Actionable Affordance for 3D Articulated Object Manipulation</em> at 
+              CVPR 2023 @ <a href="https://sites.google.com/view/cvpr2023-3d-vision-robotics" target="_blank">3DVR</a> on June 18, 2023.
+              <br>
+              <a href="https://drive.google.com/file/d/19bPWbLLnsQTBU5xT64yRQ6HgbOjrZoKv/view?usp=sharing" target="_blank">Video</a>
+            </li>
+            <li>I presented <em>Generalizable Cross-Category Object Perception and Manipulation</em> at 
+              <a href="http://dev3.noahlab.com.hk/" target="_blank"> Noah's Ark Lab, Huawei</a> on June 2, 2023.
+              <br>
+            </li>
+            <li>I presented <em>PartManip: Learning Cross-Category Generalizable Part Manipulation 
+              Policy from Point Cloud Observations</em> at 
+              <a href="https://mp.weixin.qq.com/s/jx8lbVnEugQSciXJ_j4VSQ" target="_blank">Turing 
+                Student Research Forum</a> on May 27, 2023 and was 
+                honored to receive the <strong>Best Presentation Award</strong> and <strong>Best Poster Award</strong>.
+              <br>
+              <a href="https://mp.weixin.qq.com/s/jx8lbVnEugQSciXJ_j4VSQ" target="_blank">Media</a>
+              /
+              <a href="pdf/PartManip_poster.pdf" target="_blank">Poster</a>
+            </li>
+            <li>I presented <em>Generalizable Part-based Cross-Category Object Perception and Manipulation</em>
+              at <a href="https://mp.weixin.qq.com/s/zun5HXDwY6b79UJhhOxkIA" target="_blank">CVPR2023 Seminar</a> (hosted by 
+              SenseTime) on May 28, 2023.
+              <br>
+              <a href="https://mp.weixin.qq.com/s/zun5HXDwY6b79UJhhOxkIA" target="_blank">Media</a>
+              /
+              <a href="pdf/GAPartNet_poster.pdf" target="_blank">Poster</a>
+            </li>
+            <li>I presented <em>GAPartNet: Cross-Category Domain-Generalizable Object Perception and 
+              Manipulation via Generalizable and Actionable Parts</em> at 
+              <a href="https://mp.weixin.qq.com/s/Whnkr9yPa4VXk4XflQL5Uw" target="_blank">Scientific 
+                Research Exhibition</a> (hosted by School of EECS, PKU) on May 13, 2023 and was 
+                honored to receive the <strong>Best Presentation Award</strong>.
+              <br>
+              <a href="https://mp.weixin.qq.com/s/Whnkr9yPa4VXk4XflQL5Uw" target="_blank">Media</a>
+              /
+              <a href="pdf/GAPartNet_poster.pdf" target="_blank">Poster</a>
+            </li>
+            <li>I presented <em>GAPartNet: Cross-Category Domain-Generalizable Object Perception and Manipulation via Generalizable and Actionable Parts</em> at <a href="http://www.csig3dv.net/" target="_blank">China3DV 2023</a> on April 21, 2023, which was selected as a <strong>Fastforward Report</strong> (<strong>11</strong>/75).
+              <br>
+              <a href="http://www.csig3dv.net/ShowPoster.html" target="_blank">Media</a>
+              /
+              <a href="images/GAPartNet_China3DV_poster.jpg" target="_blank">Poster</a>
+              /
+              <a href="video/GAPartNet_China3DV.mp4" target="_blank">Video</a>
+            </li>
+            <li>I presented <em>Learning Generalizable and Actionable Parts for Cross-Category Object Perception and Manipulation</em> at the <a href="https://cfcs.pku.edu.cn/news/240724.htm" target="_blank">Turing Student Research Forum</a> at CFCS, Peking University on June 8, 2022 and was honored to receive the <strong>Outstanding Presentation Award</strong>.
+              <br>
+              <a href="https://www.bilibili.com/video/BV1Rv4y1376L?p=10" target="_blank">Video</a>
+              /
+              <a href="https://cfcs.pku.edu.cn/news/240724.htm" target="_blank">Media</a>
+            </li>
+          </P>
+        </td>
+
+  </tbody></table> -->
+    
+  <!-- Services -->
+  <table id="services" style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top: 100px;"><tbody>
+      <tr>
+        <br>
+        <heading>Services</heading>
+        <br>
+      <td style="padding:0px;width:100%;vertical-align:middle">
+        <p>
+          <li>Workshop Organizer: Generative Models for Robot Learning (ICLR 2025)</li>
+        <p>
+          <li>Reviewer: CVPR, ICCV, NeurIPS, RSS, CoRL, ICRA</li>
+        </p>
+        <p>
+          <li>I serve as the chair of <a href="https://mp.weixin.qq.com/s/jx8lbVnEugQSciXJ_j4VSQ" target="_blank">Turing Student Research Forum 2023</a>.</li>
+        </p>
+        <p>
+          <li>One of the leaders of <a href="https://lcpu.club/wiki/index.php?title=%E9%A6%96%E9%A1%B5" target="_blank">Linux Club of Peking University(LCPU)</a></li>
+        </p>
+        <p>
+          <li>We organized <a href="https://hpcgame.pku.edu.cn/" target="_blank">High Performance Computing Integrated Competitiveness Competition</a> and I was also the manager of the AI part.</li>
+        </p>
+      </td>
+    </tr>
+  </tbody></table>
+
+  <!-- Experience -->
+  <table id="experience" width="100%" align="center" border="0" cellpadding="10" style="scroll-margin-top: 110px;"><tbody>
+      <br>
+          <heading>Experience</heading>
+      <br>
+      <tr>
+        <td style="padding-left:18px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/berkeley_logo.jpg", width="108"></td>
+        <td width="100%" valign="center">
+          <strong><a href="https://www.berkeley.edu/" target="_blank"><papertitle>University of California, Berkeley</papertitle> </a></strong>
+          <br>2024.8 - Present
+          <br><strong>Ph.D. Student</strong> at <a href="https://bair.berkeley.edu/" target="_blank">Berkeley AI Research (BAIR)</a>
+          <!-- <br> Advisor: 
+          Prof. <a href="https://people.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a>, 
+          Prof. <a href="https://people.eecs.berkeley.edu/~pabbeel/" target="_blank">Pieter Abbeel</a>, 
+          Prof. <a href="https://people.eecs.berkeley.edu/~efros/" target="_blank">Alyosha Efros</a>,  -->
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-left:18px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/Stanford.png", width="105"></td>
+        <td width="100%" valign="center">
+          <strong><a href="https://www.stanford.edu/" target="_blank"><papertitle>Stanford University</papertitle> </a></strong>
+          <br> <em>2023.02 - 2024.08</em><br>  <strong>Visiting Research Student through the </strong><a href="https://engineering.stanford.edu/students-academics/programs/global-engineering-programs/chinese-ugvr/" target="_blank">UGVR Program </a> 
+          <!-- <br> <em>2023.06 - 2023.09 (expected)</em> <br> <strong>Student of</strong> <a href="https://engineering.stanford.edu/students-academics/programs/global-engineering-programs/chinese-ugvr/">UGVR Program </a>  -->
+          <br> Research Advisor: Prof. <a href="https://geometry.stanford.edu/?member=guibas" target="_blank">Leonidas J. Guibas</a>
+        </td>
+      </tr>  
+      <tr>
+        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/nvidia_large.jpg", width="108"></td>
+        <td width="90%" valign="center">
+          <strong><a href="https://research.nvidia.com/labs/gear/" target="_blank"><papertitle>NVIDIA GEAR Lab</papertitle></a></strong>
+          <br> <em>2024.2 - 2024.7</em>
+          <br> <strong>Research Intern</strong>
+          <br> Research Advisor: Dr. <a href="https://jimfan.me/" target="_blank">Jim Fan</a>, Prof.  <a href="https://yukezhu.me/" target="_blank">Yuke Zhu</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/Bigai.png", width="108"></td>
+        <td width="90%" valign="center">
+          <strong><a href="https://www.bigai.ai/" target="_blank"><papertitle>Beijing Institute for General Artificial Intelligence (BIGAI)</papertitle></a></strong>
+          <br> <em>2021.12 - Present</em>
+          <br> <strong>Research Intern</strong>
+          <br> Research Advisor: Dr. <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a> 
+          <br> Academic Advisor: Prof. <a href="http://www.stat.ucla.edu/~sczhu/" target="_blank">Song-Chun Zhu</a>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding-left:27px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/vcl-logo.png", width="90"></td>
+        <td width="90%" valign="center">
+          <strong><a href="http://vcl.pku.edu.cn/index.html" target="_blank"><papertitle>Visual Computing and Learning Lab(VCL)</papertitle></a></strong>
+          <br> <em>2022.6 - 2022.9</em>
+          <br> <strong>Summer Research Intern</strong>
+          <br> Research Advisor: Prof. <a href="https://hughw19.github.io/" target="_blank">He Wang</a> 
+          <br> Academic Advisor: Prof. <a href="https://cfcs.pku.edu.cn/baoquan/" target="_blank">Baoquan Chen</a>
+        </td>
+      </tr>
+      <tr>
+          <br>
+          <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/PKU.png", width="108"></td>
+          <td width="90%" valign="center">
+            <strong><a href="https://english.pku.edu.cn/" target="_blank"><papertitle>Peking University (PKU)</papertitle></a></strong>
+            <br> <em>2020.09 - 2024.07</em>
+            <br> <strong> Bachelor of Science with Honors</strong>, <a href="https://cfcs.pku.edu.cn/english/research/turing_program/introduction1/index.htm" target="_blank">Turing Class</a>
+            <br> GPA ranking (Application Season GPA):  <strong>1</strong>/95
+            <br> Research Advisor: Prof. <a href="https://hughw19.github.io/" target="_blank">He Wang</a>
+          </td>
+      </tr>
+
+  </tbody></table>
+
+  <!-- Selected Awards and Honors -->
+  <table id="awards" style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;scroll-margin-top: 100px;"><tbody>
+          
+          <br>
+          <heading>Selected Awards and Honors</heading>
+
+          <br>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+          <!-- <a href="https://www.thegaiaa.org/en/awards_mrzx" target="_blank"><b><font color='red'>Yunfan Award</font></b></a> and was named as Rising Star at the <a href="https://www.worldaic.com.cn/" target="_blank">World Artificial Intelligence Conference</a> (top 15 early career Chinese AI researchers)! I am the only undergraduate student to win this award so far. </li> -->
+          <p>
+            <li>2025: <strong>Qualcomm Innovation Fellowship</strong> (the only Berkeley winner team this year), Qualcomm</li>
+          </p>
+          <p>
+            <li>2025: Sky9 Fellowship, Sky9</li>
+          </p>
+          <p>
+            <li>2024: <strong>Best Paper Award</strong>, RSS 2024 @ SemRob</li>
+          </p>
+          <p>
+            <li>2024: <strong>Yunfan Award</strong> for Rising Star (the only undergraduate student to win this award so far), WAIC</li>
+          </p>
+          <p>
+            <li>2024: <strong>Stanford Graduate Fellowship Award</strong>, Stanford</li>
+          </p>
+          <p>
+            <li>2024: <strong>Berkeley Fellowship Award</strong>, UC Berkeley</li>
+          </p>
+
+          <p>
+            <li>2024: Best Graduation Thesis Award, EECS, Peking University</li>
+          </p>
+          <p>
+            <li>2024: Outstanding Graduation Thesis Scholarship, Peking University</li>
+          </p>
+          <p>
+            <li>2024: Top10 Graduation Thesis (ranking 1st), EECS, Peking University</li>
+          </p>
+          <p>
+            <li>2024: Outstanding Graduates of Beijing</li>
+          </p>
+          <p>
+            <li>2024: Outstanding Graduates of Peking University, Peking University</li>
+          </p>
+          <p>
+            <li>2023: <strong>ICCV Best Paper Award (Marr Prize) Finalist</strong></li>
+          </p>
+          <p>
+            <li>2023: <strong>Person of the Year</strong> (10 people/year), Peking University</li>
+          </p>
+          <p>
+            <li>2023: Research Rising Star Award (First Price), BIGAI</li> <!-- (5000RMB¥) -->
+          </p>
+          <p>
+            <li>2023: Outstanding Overseas Exchange Scholarship</li> <!-- (20000RMB¥) -->
+          </p>
+          <p>
+            <li>2023: Academic Innovation Award of Peking University</li>
+          </p>
+          <p>
+            <li>2023: <strong>May Fourth Scholarship</strong> (<strong>Highest-level Scholarship</strong> for Peking University, <strong>125</strong>/65k+)</li> <!-- (, 12000RMB¥) -->
+          </p>
+          <p>
+            <li>2021-2023: Merit Student of Peking University</li>
+          </p>
+          <p>
+            <li>2023: Turing Student Research Forum: Best Presentation Award & Best Poster Award</li> <!-- (3000RMB¥) (1000RMB¥) -->
+          </p>
+          <!-- <p>
+            <li>2023: Turing Student Research Forum: Best Poster Award (1000RMB¥)</li>
+          </p> -->
+          <p>
+            <li>2023: School of EECS Research Exhibition: Best Presentation Award</li> <!--  (3000RMB¥) -->
+          </p>
+          <p>
+            <li>2022: Center on Frontiers of Computing Studies (CFCS) Outstanding Student</li>
+          </p>
+          <p>
+            <li>2022: Arawana Scholarship</li> <!--  (12000RMB¥) -->
+          </p>
+          <p>
+            <li>2021-2023: Zhongying Moral Education Scholarship</li> <!--  (12000RMB¥) -->
+          </p>
+          <!-- <p>
+            <li>2022: Merit Student of Peking University</li>
+          </p> -->
+          <p>
+            <li>2022: Turing Student Research Forum: Outstanding Presentation Award </li> <!--  (1000RMB¥) -->
+          </p>
+          <p>
+            <li>2021: <strong>National Scholarship</strong> (<strong>Highest Honor</strong> for undergraduates in China)</li> <!-- , 8000RMB¥-->
+          </p>
+          <p>
+            <li>2021: <strong>SenseTime Scholarship</strong> (<strong>Youngest</strong> winner, <strong>30</strong>/year in China)</li><!-- , 20000RMB¥-->
+          </p>
+          <!-- <p>
+            <li>2021: Zhongying Moral Education Scholarship (4000RMB¥)</li>
+          </p> -->
+          <!-- <p>
+            <li>2021: Merit Student of Peking University</li>
+          </p> -->
+          <p>
+            <li>2021: Ministry of Education Top Talent Program Scholarship</li> <!-- (1000RMB¥)-->
+          </p>
+          <!-- <p>
+            <li>2020: China University Computer Competition - Group Programming LadderCompetition Silver Medalist</li>
+          </p> -->
+          <!-- <p>
+            <li>2019: The 36th Chinese Physics Olympiad(CPHO) Silver Medalist</li>
+          </p>
+          <p>
+            <li>2019: The First Prize of National High School Mathematics Contest, Tianjin, China</li>
+          </p> -->
+        </td>
+      </tr>
+  </tbody></table>
+
+  <!-- Miscellaneous -->
+  <!-- <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <br>
+          <heading>Miscellaneous</heading>
+          <br>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+          
+          <p>
+            In addition to my studies and research, I have a wide range of interests. 
+            <br><li>I love sports and excel in middle-distance running🏃‍♂️, swimming🏊‍♂️, etc. I am also honored to be awarded the title of <a href="images/sport.png" target="_blank">Excellent Level Athlete (Level 3)</a> at Peking University.</li> 
+            <br><li>I am very interested in art🥳 and have also enrolled in the <em>"Computing and Arts" program</em> by Prof. <a href="https://cfcs.pku.edu.cn/baoquan/" target="_blank">Baoquan Chen</a> and Prof. <a href="https://philpeople.org/profiles/feng-peng" target="_blank">Feng Peng</a> in anticipation of making great art through computing and programming. </li>
+            <br><li>I enjoy hip-hop😎, piano🎹, and  painting🎨, and I have been fortunate enough to have earned the title of  <a href="images/art.png" target="_blank">Artistic Specialists Student</a>.</li>
+            <br><li>I have a passion for philanthropy💖. I have participated in many charity events, and for my outstanding performance and contributions, I have been honored to receive the <a href="https://youth.pku.edu.cn/tzgg/zytz/355467.htm" target="_blank">Zhongying Moral Education Scholarship</a> for two consecutive years.</li>
+            <br><li>To promote computer knowledge💻, I became one of the leaders of <a href="https://lcpu.club/wiki/index.php?title=%E9%A6%96%E9%A1%B5" target="_blank">Linux Club of Peking University(LCPU)</a>, helping to popularize computer knowledge with students at Peking University.</li> 
+          </p>
+        </td>
+      </tr>
+  </tbody></table> -->
+
+  
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr>
+      <td style="text-align:center">
+        <a href="https://clustrmaps.com/site/1c741" title="ClustrMaps"><script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=cGkH3PDaHVWEpzvP3BYDV3OM8bOC6otQx1KDSsMJnxw&co=ffffff&cmo=33a508&cmn=ff6628&ct=000000'></script>
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Aknowledgements -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+      <!-- <br> -->
+      <!-- <br> -->
+      <hr>
+        <p style="text-align:center">
+          This homepage is designed based on <a href="https://jonbarron.info/">Jon Barron</a>'s website and deployed on <a href="https://pages.github.com/">Github Pages</a>. Last updated: Aug. 29, 2023
+
+          <br>
+          © 2024 Haoran Geng
+        </p>
+      </td>
+      </tr>
+  </tbody></table>
+
+</body>
+</html>
